@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+	<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 		xmlns:p="http://www.springframework.org/schema/p"
+ 		xmlns:aop="http://www.springframework.org/schema/aop"
+ 		xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+ 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/springtx-4.0.xsd">
+ 		
+ 		<bean id="HandlerMapping"
+			class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+ 		
+ 		<bean id="viewResolver"
+			class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+ 			p:prefix="" p:suffix=".jsp" />
+ 		
+ 		<bean id="/index.html" class="controller.SpringController"/>
+ 		<bean id="/login.html" class="controller.SpringController"/>
+ 		<bean id="/logout.html" class="controller.SpringController"/>
+ 		<bean id="/signup.html" class="controller.SpringController"/>
+ 		<bean id="/addTarget.html" class="controller.SpringController"/>
+ 		<bean id="/recordMeal.html" class="controller.SpringController"/>
+ 		<bean id="/setDietReq.html" class="controller.SpringController"/>
+ 		<bean id="/setDistance.html" class="controller.SpringController"/>
+ 		<bean id="/addScheduleItem.html" class="controller.SpringController"/>
+ 		<bean id="/mealHistory.html" class="controller.SpringController"/>
+ 		<bean id="/mealSettings.html" class="controller.SpringController"/>
+	</beans>
